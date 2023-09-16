@@ -4,11 +4,11 @@
 }
 
 body{
-  background-color: #cbdeb6;
+  background-color: #202F36;
 }
 
 header {
-  background-color: #0a1f07;
+  background-color: #131F24;
   margin-bottom: 25px;
   }
 
@@ -23,16 +23,13 @@ header {
   
   .imagemperfil{
     width: 45%;
-  
     display: flex;
     flex-direction: column;
-    
     align-items: center;
   }
 
   .text-about{
     width: 45%;
-    
     width: 50%;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +40,7 @@ header {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    border: 8px solid #153f0f;
+    border: 5px solid #202F36;
     object-fit: cover;
     object-position: center center;
   }
@@ -128,11 +125,14 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 
 #myskills{
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: xx-large;
+  font-family: monospace;
+  margin: 2%;
 }
 
 .skillcards {
@@ -147,15 +147,47 @@ header {
   width: 90%;
 }
 
-.skillcard{
+
+
+
+.skillcard-html{
   width: 20%;
-  background-color: #153f0f;
+  background-color: #FF4E1D;
   border-radius: 10%;
   transition: 500ms linear; 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.skillcard:hover{
+.skillcard-css{
+  width: 20%;
+  background-color: #0074BE;
+  border-radius: 10%;
+  transition: 500ms linear; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.skillcard-js{
+  width: 20%;
+  background-color: #F8DC3E;
+  border-radius: 10%;
+  transition: 500ms linear; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.skillcard-html:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.skillcard-css:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.skillcard-js:hover{
   transform: scale(1.01);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
