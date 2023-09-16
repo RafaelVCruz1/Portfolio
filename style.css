@@ -2,8 +2,13 @@
   margin: 0px;
   padding: 0px;
 }
+
+body{
+  background-color: #202F36;
+}
+
 header {
-  background-color: #3152E5;
+  background-color: #131F24;
   margin-bottom: 25px;
   }
 
@@ -18,18 +23,15 @@ header {
   
   .imagemperfil{
     width: 45%;
-  
     display: flex;
     flex-direction: column;
-    
     align-items: center;
   }
 
   .text-about{
     width: 45%;
-    
     width: 50%;
-    text-align: center;
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,7 +40,7 @@ header {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    border: 8px solid #5977fd;
+    border: 5px solid #202F36;
     object-fit: cover;
     object-position: center center;
   }
@@ -119,72 +121,75 @@ header {
   margin-left: 10px;
 }
 
-.about .progress-bars {
-    width: 40%;
-    align-self: flex-end;
+.containnerskills{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  text-align: center;
+  
 }
 
-.about .progress-bar {
-  margin-bottom: 10px;
+#myskills{
+  color: #ffffff;
+  font-size: xx-large;
+  font-family: monospace;
+  margin: 2%;
 }
 
-.about .progress-bar p {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-
-
-.progress-bar-inner1{
+.skillcards {
     width: 100%;
-    height: 10px;
-  border-radius: 10px;
-  background-color: #d8d7d7;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ margin: 10px;
 }
 
-.progress-bar-inner2{
-    width: 100%;
-    height: 10px;
-  border-radius: 10px;
-  background-color: #d8d7d7;
+#imgskill{
+  width: 90%;
 }
 
-.progress-bar-inner3{
-    width: 100%;
-    height: 10px;
-  border-radius: 10px;
-  background-color: #d8d7d7;
+
+
+
+.skillcard-html{
+  width: 20%;
+  background-color: #FF4E1D;
+  border-radius: 10%;
+  transition: 500ms linear; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.progress-bar-inner1:before{
-    content: "";
-    width: 80%;
-  display: block;
-  height: 100%;
-  background: linear-gradient(to right, #00fef6, #3152e5);
-  border-radius: 10px;
+.skillcard-css{
+  width: 20%;
+  background-color: #0074BE;
+  border-radius: 10%;
+  transition: 500ms linear; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.progress-bar-inner2:before{
-    content: "";
-    width: 70%;
-  display: block;
-  height: 100%;
-  background: linear-gradient(to right, #00fef6, #3152e5);
-  border-radius: 10px;
+.skillcard-js{
+  width: 20%;
+  background-color: #F8DC3E;
+  border-radius: 10%;
+  transition: 500ms linear; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.progress-bar-inner3:before{
-    content: "";
-    width: 50%;
-  display: block;
-  height: 100%;
-  background: linear-gradient(to right, #00fef6, #3152e5);
-  border-radius: 10px;
+
+.skillcard-html:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.skillcard-css:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.skillcard-js:hover{
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .servicos{
